@@ -56,7 +56,7 @@ list_path *add_node_end(list_path **head, char *str)
 		return (NULL);
 	}
 
-	new_node->dir = str;
+	new_node->directory = str;
 
 	new_node->p = '\0';
 	if (!*head)
@@ -70,7 +70,7 @@ list_path *add_node_end(list_path **head, char *str)
 		while (temp->p)
 		{
 
-			temp = tmp->p;
+			temp = temp->p;
 		}
 
 		temp->p = new_node;
@@ -117,7 +117,7 @@ char *get_cmd_location(char *filename, list_path *head)
 	while (tmp)
 	{
 
-		string = _concat(tmp->dir, "/", filename);
+		string = _concat(tmp->directory, "/", filename);
 		if (stat(string, &st) == 0)
 		{
 			return (string);
@@ -140,7 +140,7 @@ void _freelist(list_path *head)
 	while (head)
 	{
 		location = head->p;
-		free(head->dir);
+		free(head->directory);
 		free(head);
 		head = location;
 	}

@@ -64,7 +64,7 @@ char *_concat(char *str1, char *str2, char *str3)
 		concat_str[j + i] = str3[i];
 	j = j + i;
 
-	result[j] = '\0';
+	concat_str[j] = '\0';
 
 	return (concat_str);
 }

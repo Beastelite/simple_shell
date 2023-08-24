@@ -8,8 +8,9 @@
 void(*buildcheck(char **arv))(char **arv)
 {
 	int i, j;
+
 	builtin T[] = {
-		{"exit", _exit},
+		{"exit", _exitt},
 		{"env", _env},
 		{"setenv", _setenv},
 		{"unsetenv", _unsetenv},
