@@ -44,7 +44,7 @@ list_path *link_path(char *path);
 char *get_cmd_location(char *filename, list_path *head);
 
 /**
- * struct design - pointer to a function 
+ * struct builtin - struct builtin
  * @name:  command
  * @func: execute the command
  */

@@ -31,7 +31,7 @@ void _EOF(int len, char *buff)
 	}
 }
 /**
-  * _isatty – check if terminal
+  * _isatty - check if terminal
   */
 
 void _isatty(void)
@@ -40,7 +40,7 @@ void _isatty(void)
 		_puts("#myShell$ ");
 }
 /**
- * main – my simple shell
+ * main - my simple shell
  * Return: On success, 1
  */
 

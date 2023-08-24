@@ -29,10 +29,10 @@ void _exitt(char **arv)
  */
 int _atoi(char *s)
 {
-	int i, return_int, sign = 1;
+	int i, rturn_int, sign = 1;
 
 	i = 0;
-	return_int = 0;
+	rturn_int = 0;
 	while (!((s[i] >= '0') && (s[i] <= '9')) && (s[i] != '\0'))
 	{
 		if (s[i] == '-')
@@ -43,10 +43,10 @@ int _atoi(char *s)
 	}
 	while ((s[i] >= '0') && (s[i] <= '9'))
 	{
-		return_int = (return_int * 10) + (sign * (s[i] - '0'));
+		rturn_int = (rturn_int * 10) + (sign * (s[i] - '0'));
 		i++;
 	}
-	return (return_int);
+	return (rturn_int);
 }
 
 /**

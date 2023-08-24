@@ -36,7 +36,7 @@ char *_strdup(char *str)
  * _concat - concats 3 strings in a newly allocated memory
  * @str1: first string
  * @str2: second string
- * @str3 Third string
+ * @str3: Third string
  * Return: pointer to the new string
  */
 char *_concat(char *str1, char *str2, char *str3)
@@ -86,7 +86,7 @@ int _strlen(char *str)
 }
 
 /**
- * _putchar – prints a character to stdout
+ * _putchar - prints a character to stdout
  * @c: character to print
  *
  * Return: 1 on success
@@ -106,7 +106,7 @@ void _puts(char *str)
 {
 	int i;
 
-	for(i = 0; str[i]; i++)
+	for (i = 0; str[i]; i++)
 	{
 		_putchar(str[i]);
 	}

@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* buildccheck - checks if the command is a builtin functions
+* buildcheck - checks if the command is a builtin functions
 * @arv: array of arguments
 * Return: pointer to function that takes arv and returns void
 */

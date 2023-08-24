@@ -3,7 +3,7 @@
 
 /**
  * _splitstring - splits a string and makes it an array of pointers to words
- * @str: the string to be splitted 
+ * @str: the string to be splitted
  * @delim: the delimiter
  * Return: array of pointers to words
  */
@@ -38,7 +38,8 @@ char **_splitstring(char *str, const char *delim)
 	while (token)
 	{
 		token = strtok(NULL, delim);
-		array = _realloc(array, (sizeof(char *) * (wrdnum - 1)), (sizeof(char *) * wrdnum));
+		array = _realloc(array, (sizeof(char *) * (wrdnum - 1)),
+				(sizeof(char *) * wrdnum));
 		array[i] = _strdup(token);
 		i++;
 		wrdnum++;
